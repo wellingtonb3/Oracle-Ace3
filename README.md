@@ -14,11 +14,15 @@ This project automates the collection of precious metal prices and technical ind
 * **OCI Integration**: Uses `python-oracledb` with a `MERGE` (Upsert) logic to prevent duplicate records.
 * **Relational Mapping**: Connects technical ticker symbols to human-readable names via a metadata lookup table.
 
+![Database Schema](./images/database.png)
+
 ## 🛠️ Tech Stack
 * **Language**: Python 3.14 (Google Colab Environment)
 * **Database**: Oracle Autonomous Database (OCI Always Free Tier)
 * **Cloud Platform**: Oracle Cloud Infrastructure (OCI)
 * **Libraries**: `yfinance`, `pandas-ta`, `oracledb`, `matplotlib`
+
+![Database Schema](./images/oracle_database_by_wallet.png)
 
 ## 📂 Project Structure
 * `assets_oci.py`: The main Python script for data extraction and OCI synchronization.
@@ -66,7 +70,7 @@ Execute: Run assets_oci.py to fetch market data, perform RSI calculations, and p
 
 ```
 
----
+![Database Schema](./images/gold_silver_copper.png)
 
 ## 🛠️ Technical Challenges & Solutions
 
